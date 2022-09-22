@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/components/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/6f293be92f.js" crossorigin="anonymous"></script>
+  <title>Inventory | Deploy by is-noah</title>
+</head>
+
+<body>
+  <header>
+    <!----Contain offcanvas---->
+    <nav class="navbar navbar-expand-lg" style="background: #436e5d ; height: 56px;">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand text-white" href="#">Inventory</a>
+          <img src="/images/lupa.png" alt="" width="35">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header w-100" style="background: #436e5d">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="/images/IMG_20220417_174004_013-removebg.jpg" alt="" width="60" style="border-radius: 50%;">
+              <div class="d-flex flex-column justify-content-center align-items-center" style="margin: 10px;">
+                <h5 class="text-white" style="font-size: smaller; margin: 0;">
+                  Andriel Noa
+                </h5>
+                <p class="text-white" style="font-size: small; margin: 0;">Admin</p>
+              </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body w-100" style="background: #f2fce2">
+            <!--------
+                TODO: Look This First
+                ------->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="menuDropDown">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#HomePage" id="changeThisColor">HomePage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#" id="changeThisColor">Mis Franquicias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#GestionDeSucursales" id="changeThisColor">Mi sucursales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" id="changeThisColor">Mis Cuentas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!------------------------->
+  </header>
+  <!-----Presentation------>
+  <div id="HomePage">
+    <div class="text-white text-center">
+      <img src="/images/inventory.png" alt="" width="100" class="m-2">
+      <h1>Welcome to <span style="color: #446d5e;">Inventory</span> </h1>
+      <h2>Manage your <span style="color: #446d5e;">Business</span></h2>
+      <h2>from the <span style="color: #446d5e;">Phone</span></h2>
+      <a href="#GestionDeSucursales">
+        <button type="button" class="btn btn-outline-success w-100">Control in your Hands</button>
+      </a>
+    </div>
+
+  </div>
+  <!-----End Presentation------>
+  <!----
+    TODO: Ajustar el contenedor principal
+  -->
+  <main class="container" id="GestionDeSucursales">
+    <strong>
+      <h3 class="text-center text-success" style="margin-top: 30px; margin-bottom: 30px; ">Gestión de Sucursales</h3>
+    </strong>
+
+    <!----First Row ---->
+    <div class="row d-flex justify-content-lg-start align-items-start">
+
+
+      <!----Left Side ---->
+      <div
+        class="container col-12 col-lg-4 col-md-4 col-sm-12 d-flex align-items-center justify-content-center flex-column">
+        <div class="d-flex w-100 justify-content-between">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width: 48%;">
+            <option selected>StartBucs</option>
+
+          </select>
+
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width: 48%;">
+            <option selected>Park</option>
+
+          </select>
+
+        </div>
+        <p class="text-danger text-center">*Lorem ipsum dolor sit amet consectetur adipisicing elit. qui excem. Ratione
+          eligendi eium?
+
+        </p>
+        <div class="w-100 d-flex justify-content-center align-items-center flex-column" style="height: 300px;">
+          <i class="fa-sharp fa-solid fa-circle-plus" style="font-size: 80px;color: #436e5d;"></i>
+
+          <p style="margin-bottom: 0;">Add Sucursal a la franquicia</p>
+          <p class="text-center text-success">StartBucs.</p>
+
+        </div>
+      </div>
+      <!----Right Side ---->
+      <div class="col-12 col-lg-8 col-md-8 col-sm-12 d-flex align-items-center justify-content-center flex-column">
+        <div
+          style="background-color: #f2fce2; width: 100%; border-left: solid 2px #2f5141;border-radius: 20px 20px 0 0;"
+          id="RightSide" class="d-flex align-items-center justify-content-center flex-column">
+          <div id="heading" class="d-flex align-items-center justify-content-center text-white p-2"
+            style="background-color:#446d5e ;width: 100%; border-radius: 20px 20px 0 0;">
+            <h1 style="font-size: medium; margin-bottom:0 ;">StarBucs en Parque Avenida</h1>
+          </div>
+          <img src="/images/StorePng.png" alt="" width="60" style="margin-top: 30px;">
+
+          <!---Inputs 1-->
+          <div class="container">
+
+            <div class="row m-2">
+              <div>
+                <p style="border-bottom: solid 2px #446d5e ; width: max-content;">
+                  Información de la Sucursal
+                </p>
+              </div>
+
+              <div class="col-12">
+                <input class="form-control " type="text" placeholder="Nombre de la Sucursal"
+                  aria-label="default input example" style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-12">
+                <input class="form-control " type="text" placeholder="Street Name" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-6">
+                <input class="form-control " type="text" placeholder="Street Name" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-3">
+                <input class="form-control " type="text" placeholder="ZIP" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+
+              <div class="col-3">
+                <input class="form-control " type="text" placeholder="State" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-12">
+                <input class="form-control " type="text" placeholder="Phone" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+            </div>
+          </div>
+          <!---- ENd Inputs 1-->
+
+          <!---Inputs 2-->
+          <div class="container">
+
+            <div class="row m-2">
+              <div>
+                <p style="border-bottom: solid 2px #446d5e ; width: max-content;">
+                  Información de Conexión
+                </p>
+              </div>
+
+              <div class="col-6">
+                <input class="form-control " type="text" placeholder="IP" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-6">
+                <input class="form-control " type="text" placeholder="PORT" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-6">
+                <input class="form-control " type="text" placeholder="USER" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-6">
+                <input class="form-control " type="password" placeholder="PASSWORD" aria-label="default input example"
+                  style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+
+              <div class="col-6">
+                <input class="form-control " type="text" placeholder="Name of Database"
+                  aria-label="default input example" style="margin-top: 10px; margin-bottom:10px;">
+              </div>
+
+              <div class="col-6 d-flex justify-content-start align-items-center">
+                <a href="#" class="text-success" style="font-size: small;">Verifique Conexión</a>
+              </div>
+            </div>
+          </div>
+
+          <!---- ENd Inputs 2-->
+          <div id="submitbutt" class="m-2 d-flex justify-content-around  w-50">
+            <button type="button" class="btn btn-success" style="width: 200px; margin-right: 5px;">SAVE</button>
+            <button type="button" class="btn btn-danger" style="width: 200px; margin-left: 5px;">DELETE</button>
+          </div>
+
+          <div style="height: 20px;">
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div id="upfooter" style="background-color: #505050;"
+      class=" text-white-50 p-4 d-flex align-items-start justify-content-center  flex-column">
+      <p>Acerca de Nosotros:</p>
+      <p> Dirección 111 Street , Local Country , City ST , 12345</p>
+      <p>Phone : + 53 58799597</p>
+    </div>
+    <div style="background-color: #2f5141;"
+      class=" text-white-50 p-4 d-flex align-items-start justify-content-center flex-column">
+      <h6>Inventory &copy; 2022 Todos Los Derechos Reservados | Deploy by is-noah</h6>
+    </div>
+  </footer>
+  <script src="/components/js/bootstrap.min.js"></script>
+</body>
+
+</html>
